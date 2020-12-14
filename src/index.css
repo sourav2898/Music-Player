@@ -7,11 +7,13 @@
 body{
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .main{
   display: flex;
   position: relative;
+  z-index: 999;
 }
 
 /************************* sidebar *********************************/
@@ -144,7 +146,7 @@ body{
   justify-content: space-between;
   padding: 10px;
   width: 100%;
-  height: 80px;
+  height: 60px;
   background-color: #fff;
 }
 
@@ -183,4 +185,58 @@ body{
   padding: 10px;
   color: #666;
   cursor: pointer;
+}
+
+/* ********************* Radio ********************* */
+
+.radio{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #EAEDF3;
+}
+
+.radio .header{
+  display: inline;
+  position: relative;
+  top: 120px;
+  left: 300px;
+  color: #131336;
+}
+
+.radio .container{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  top: 130px;
+  left: 300px;
+  width: 1177px;
+}
+
+.radio .container .card {
+  margin-top: 10px;
+}
+
+.radio .container .card .card-title{
+  width: 322px;
+  height: 202px;
+  border-radius: 7px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.radio .container .card .card-title .h3{
+  position: relative;
+  top: 150px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.radio .container .card .subtitle{
+  color: #131336;
 }
