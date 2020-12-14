@@ -35,6 +35,10 @@ const Navbar = () => {
                             <li><a href="#"><i className="fa fa-headphones" aria-hidden="true"></i>Commute</a></li>
                         </ul>
                     </div>
+                    <div className="footer">
+                        <span><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+                        <h3>Add New Playlist</h3>
+                    </div>
                 </div>
                 <div className="topbar">
                     <div className="left">

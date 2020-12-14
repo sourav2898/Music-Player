@@ -17,7 +17,7 @@ body{
 /************************* sidebar *********************************/
 
 .main .sidebar{
-  width: 200px;
+  width: 270px;
   height: 100vh;
   background-color: #4C4CAB;
   color: #ffffff;
@@ -121,6 +121,20 @@ body{
   padding: 10px;
   color: #fff;
 }
+
+.main .sidebar .footer{
+  position: absolute;
+  width: 229px;
+  bottom: 0;
+  height: 120px;
+  background-image: linear-gradient(to bottom, #4C4CAB,#222);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px 20px 0 20px;
+  cursor: pointer;
+}
+
 
 /*************************** topbar************************ */
 
