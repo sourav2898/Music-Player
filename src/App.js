@@ -21,7 +21,7 @@ const App = () => {
         <Route exact path="/" component={Radio} />
         <Route exact path="/workout" component={Workout} />
         <Route exact path="/love" render={() => <Love data={search} />} />
-        <Redirect path="/" />
+        <Redirect to="/" />
       </Switch>
     </>
   )

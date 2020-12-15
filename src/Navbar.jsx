@@ -36,21 +36,21 @@ const Navbar = (props) => {
                         </ul>
                     </div>
                     <div className="footer">
-                        <span><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+                        <span><i className="fa fa-plus-circle" aria-hidden="true"></i></span>
                         <h3>Add New Playlist</h3>
                     </div>
                 </div>
                 <div className="topbar">
                     <div className="left">
-                        <span> <i class="fas fa-angle-left"></i> </span>
-                        <span> <i class="fas fa-angle-right"></i> </span>
+                        <span> <i className="fas fa-angle-left"></i> </span>
+                        <span> <i className="fas fa-angle-right"></i> </span>
                         <form action="/love">
                             <input type="text" placeholder="search for track, artist or album" value={props.search} onChange={(e) => props.change(e)} />
                         </form>
                     </div>
                     <div className="right">
-                        <span> <i class="fas fa-bell"></i> </span>
-                        <span> <i class="fas fa-cog"></i> </span>
+                        <span> <i className="fas fa-bell"></i> </span>
+                        <span> <i className="fas fa-cog"></i> </span>
                     </div>
                 </div>
                 <div className="playbar">
@@ -60,14 +60,14 @@ const Navbar = (props) => {
                     </div>
                     <div className="controller">
                         <i className="fa fa-redo"></i>
-                        <i class="fas fa-backward"></i>
-                        <i class="fas fa-pause-circle"></i>
-                        <i class="fas fa-forward"></i>
-                        <i class="fas fa-random"></i>
+                        <i className="fas fa-backward"></i>
+                        <i className="fas fa-pause-circle"></i>
+                        <i className="fas fa-forward"></i>
+                        <i className="fas fa-random"></i>
                     </div>
                     <div className="seekbar">
                         <p>1:50</p>
-                        <input type="range" min="1" max="250" value="150" class="slider" id="myRange" />
+                        <input type="range" min="1" max="250" value="150" className="slider" id="myRange" />
                         <p>2:50</p>
                     </div>
                     <div className="next">
