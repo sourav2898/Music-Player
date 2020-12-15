@@ -1,12 +1,6 @@
 import React from 'react';
 
 const Navbar = (props) => {
-
-    
-
-    const submit = () => {
-
-    }
     
     return (
         <>
@@ -18,27 +12,27 @@ const Navbar = (props) => {
                     </div>
                     <div className="navs">
                         <ul>
-                            <li><a href="#"><i className="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                            <li><a href="#"><i className="fa fa-globe" aria-hidden="true"></i>Browse</a></li>
+                            <li><a href="/"><i className="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                            <li><a href="/"><i className="fa fa-globe" aria-hidden="true"></i>Browse</a></li>
                             <li><a href="/"><i className="fa fa-signal" aria-hidden="true"></i>Radio</a></li>
-                            <li><a href="#"><i className="fa fa-user" aria-hidden="true"></i>Artist</a></li>
-                            <li><a href="#"><i className="fa fa-music" aria-hidden="true"></i>Albums</a></li>
+                            <li><a href="/"><i className="fa fa-user" aria-hidden="true"></i>Artist</a></li>
+                            <li><a href="/"><i className="fa fa-music" aria-hidden="true"></i>Albums</a></li>
                         </ul>
                     </div>
                     <div className="music">
                         <h4> My Music </h4>
                         <ul>
-                            <li><a href="#"><i className="fa fa-redo"></i>Recent Played</a></li>
-                            <li><a href="#"><i className="fa fa-heart"></i>Favourite</a></li>
-                            <li><a href="#"><i className="fa fa-download" aria-hidden="true"></i>Downloaded</a></li>
+                            <li><a href="/"><i className="fa fa-redo"></i>Recent Played</a></li>
+                            <li><a href="/"><i className="fa fa-heart"></i>Favourite</a></li>
+                            <li><a href="/"><i className="fa fa-download" aria-hidden="true"></i>Downloaded</a></li>
                         </ul>
                     </div>
                     <div className="playlist">
                         <h4> Playlist </h4>
                         <ul>
                             <li><a href="/workout"><i className="fa fa-music" aria-hidden="true"></i>Workout</a></li>
-                            <li><a href="#"><i className="fa fa-music" aria-hidden="true"></i>Yoga</a></li>
-                            <li><a href="#"><i className="fa fa-headphones" aria-hidden="true"></i>Commute</a></li>
+                            <li><a href="/"><i className="fa fa-music" aria-hidden="true"></i>Yoga</a></li>
+                            <li><a href="/"><i className="fa fa-headphones" aria-hidden="true"></i>Commute</a></li>
                         </ul>
                     </div>
                     <div className="footer">
