@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 const Radio = () => {
 
@@ -12,7 +11,7 @@ const Radio = () => {
                 <div className="container">
                     <div className="card">
                         <div className="card-title" style={{ backgroundColor: "#4C4CAB" }}>
-                            <NavLink exact to="/" className="h3"><h3>Radio</h3> </NavLink>
+                            <a href="/workout" className="h3">Radio</a>
                         </div>
                         <div className="subtitle">
                             <h3>Home Radio</h3>
@@ -21,7 +20,7 @@ const Radio = () => {
 
                     <div className="card">
                         <div className="card-title" style={{ backgroundColor: "#FF808B" }}>
-                            <NavLink exact to="/" className="h3"><h3>Radio</h3> </NavLink>
+                            <a href="/workout" className="h3">Radio</a>
                         </div>
                         <div className="subtitle">
                             <h3>Broadcast Radio</h3>
@@ -30,7 +29,7 @@ const Radio = () => {
 
                     <div className="card">
                         <div className="card-title" style={{ backgroundColor: "#4C4CAB" }}>
-                            <NavLink exact to="/" className="h3"><h3>Radio</h3> </NavLink>
+                            <a href="/workout" className="h3">Radio</a>
                         </div>
                         <div className="subtitle">
                             <h3>Space Radio</h3>
@@ -39,7 +38,7 @@ const Radio = () => {
 
                     <div className="card">
                         <div className="card-title" style={{ backgroundColor: "#131336" }}>
-                            <NavLink exact to="/" className="h3"><h3>Radio</h3> </NavLink>
+                            <a href="/workout" className="h3">Radio</a>
                         </div>
                         <div className="subtitle">
                             <h3>Home Radio</h3>
@@ -48,7 +47,7 @@ const Radio = () => {
 
                     <div className="card">
                         <div className="card-title" style={{ backgroundColor: "#42425E" }}>
-                            <NavLink exact to="/" className="h3"><h3>Radio</h3> </NavLink>
+                            <a href="/workout" className="h3">Radio</a>
                         </div>
                         <div className="subtitle">
                             <h3>Broadcast Radio</h3>
