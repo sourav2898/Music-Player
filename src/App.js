@@ -18,10 +18,10 @@ const App = () => {
     <>
       <Navbar search={search} change={change} />
       <Switch>
-        <Route exact path="/musicplayer" component={Radio} />
+        <Route exact path="/Music-Player/" component={Radio} />
         <Route exact path="/workout" component={Workout} />
         <Route exact path="/love" render={() => <Love data={search} />} />
-        <Redirect to="/musicplayer" />
+        <Redirect to="/Music-Player/" />
       </Switch>
     </>
   )
