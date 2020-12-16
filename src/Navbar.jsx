@@ -7,7 +7,7 @@ const Navbar = (props) => {
     const [right, setright] = useState("-300px");
 
     const setting = () => {
-        if(i%2 == 0 ){
+        if(i%2 === 0 ){
             setright("0");
             ++i;
         }
@@ -16,6 +16,10 @@ const Navbar = (props) => {
             ++i;
         }
         
+    }
+
+    const change = (e) => {
+        props.change(e);
     }
 
     return (
@@ -61,7 +65,7 @@ const Navbar = (props) => {
                         <span> <i className="fas fa-angle-left"></i> </span>
                         <span> <i className="fas fa-angle-right"></i> </span>
                         <form action="/love">
-                            <input type="text" placeholder="search for track, artist or album" value={props.search} onChange={(e) => props.change(e)} />
+                            <input type="text" placeholder="search for track, artist or album" defaultValue={props.search} onChange={change} />
                         </form>
                     </div>
                     <div className="right">
@@ -107,7 +111,7 @@ const Navbar = (props) => {
                     <div className="show-item">
                         <div className="icon">
                             <div className="icon-user friend">
-                                <i class="fas fa-user-friends"></i>
+                                <i className="fas fa-user-friends"></i>
                             </div>
                             <h4>Friends</h4>
                         </div>
@@ -136,7 +140,7 @@ const Navbar = (props) => {
                 </div>
 
                 <div className="folder">
-                    <i class="fas fa-folder-open"></i>
+                    <i className="fas fa-folder-open"></i>
                     <p>Upgrade to PRO for more benefits</p>
                     <button>Upgrade</button>
                 </div>
