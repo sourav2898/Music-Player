@@ -1,7 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Navbar = (props) => {
-    
+
+    var i = 2;
+
+    const [right, setright] = useState("-300px");
+
+    const setting = () => {
+        if(i%2 == 0 ){
+            setright("0");
+            ++i;
+        }
+        else{
+            setright("-300px");
+            ++i;
+        }
+        
+    }
+
     return (
         <>
             <div className="main">
@@ -50,7 +66,7 @@ const Navbar = (props) => {
                     </div>
                     <div className="right">
                         <span> <i className="fas fa-bell"></i> </span>
-                        <span> <i className="fas fa-cog"></i> </span>
+                        <span id="setting" onClick={setting}> <i className="fas fa-cog"></i> </span>
                     </div>
                 </div>
                 <div className="playbar">
@@ -74,6 +90,55 @@ const Navbar = (props) => {
                         <h4>Up Next</h4>
                         <p>Winnie Jordan</p>
                     </div>
+                </div>
+            </div>
+            {/*  settings  */}
+            <div className="setting" style={{ right:`${right}`}}>
+                <div className="free">
+                    <h4 className="title">Free</h4>
+                </div>
+
+                <div className="show">
+                    <div className="header">
+                        <h4>Michelle Dunkin</h4>
+                        <h5>Los Angeles</h5>
+                    </div>
+
+                    <div className="show-item">
+                        <div className="icon">
+                            <div className="icon-user friend">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <h4>Friends</h4>
+                        </div>
+                        <p> 50 </p>
+                    </div>
+
+                    <div className="show-item">
+                        <div className="icon">
+                            <div className="icon-user heart" >
+                                <i className="fa fa-heart"></i>
+                            </div>
+                            <h4>Likes</h4>
+                        </div>
+                        <p> 120 </p>
+                    </div>
+
+                    <div className="show-item">
+                        <div className="icon">
+                            <div className="icon-user music">
+                                <i className="fa fa-music" aria-hidden="true"></i>
+                            </div>
+                            <h4>Playlist</h4>
+                        </div>
+                        <p> 3 </p>
+                    </div>
+                </div>
+
+                <div className="folder">
+                    <i class="fas fa-folder-open"></i>
+                    <p>Upgrade to PRO for more benefits</p>
+                    <button>Upgrade</button>
                 </div>
             </div>
         </>

@@ -441,3 +441,119 @@ body{
   margin: 10px;
   box-shadow: 1px 1px 3px  #131336;
 }
+
+/* ******************* Settings ********************** */
+
+.setting{
+  position: absolute;
+  top: 61px;
+  right: 0;
+  width: 285px;
+  height: 1090px;
+  z-index: 9999;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.setting .free{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  color: darkred;
+}
+
+.setting .free .title{
+  background-color: #FF808B;
+  width: 68px;
+  height: 32px;
+  color: #fff;
+  text-align: center;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.setting .show{
+  position: relative;
+  top: 50px;
+  width: 226px;
+  text-align: center;
+  color: #131336;
+  padding: 10px;
+}
+
+.setting .show .header{
+  width: 226px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.setting .show .show-item{
+  width: 225px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 10px;
+}
+
+.setting .show .show-item .icon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100px;
+  text-align: center;
+}
+
+.setting .show .show-item .icon .icon-user{
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.setting .show .show-item .icon .friend{
+  background-color: #4C4CAB;
+  color: #fff;
+} 
+
+.setting .show .show-item .icon .heart{
+  background-color: #FF808B;color: #fff;
+} 
+
+.setting .show .show-item .icon .music{
+  background-color: #50D757;color: #fff;
+} 
+
+.setting .folder{
+  position: relative;
+  top: 50px;
+  background-color: #EAEDF3;
+  width: 225px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.setting .folder i{
+  position: relative;
+  top: -50px;
+  font-size: 70px;
+  margin: 0;
+  color: #4C4CAB;
+}
+
+.setting .folder p{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.setting .folder button{
+  padding: 7px 30px;
+  background-color: #4C4CAB;
+  border: 1px solid #4C4CAB;
+  outline: none;
+  border-radius: 20px;
+  color: #fff;
+}
